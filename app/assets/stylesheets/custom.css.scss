@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  padding-top: 40px;
+  padding-top: 100px;
 }
 
 section {
@@ -73,7 +73,7 @@ p {
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: yellow;
+    color: gray;
     text-decoration: none;
   }
 }
