@@ -49,7 +49,9 @@ group :development, :test do
   gem 'childprocess', '0.7.1'
   gem 'guard-rspec', '~> 4.7'
   #gem 'spork-rails', '4.0.0'
+  gem 'factory_girl_rails', '4.8.0'
 end
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
@@ -63,6 +65,10 @@ end
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
+end
+
+group :test do
+gem 'factory_girl_rails', '4.8.0' 
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
