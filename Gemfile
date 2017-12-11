@@ -16,6 +16,8 @@ gem 'bootstrap-sass', '3.3.7'
 gem 'puma', '~> 3.7'
 # Automatic Ruby code style checking tool
 gem 'rubocop', '0.50.0'
+
+gem 'rake', '12.2.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -49,7 +51,7 @@ group :development, :test do
   gem 'childprocess', '0.7.1'
   gem 'guard-rspec', '~> 4.7'
   #gem 'spork-rails', '4.0.0'
-  gem 'factory_girl_rails', '4.8.0'
+  gem 'factory_girl_rails', '4.9.0'
 end
 
 
@@ -68,7 +70,9 @@ group :doc do
 end
 
 group :test do
-gem 'factory_girl_rails', '4.8.0' 
+gem 'factory_girl_rails', '4.9.0' 
+gem 'cucumber-rails', '1.5.0', :require => false
+gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
